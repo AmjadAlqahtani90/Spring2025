@@ -1,0 +1,30 @@
+# Reversi DQN AI Agent
+This AI agent uses Deep Q-Learning (DQN) to play the game of Reversi.
+
+## Requirements
+- Python 3.8+
+- PyTorch
+- NumPy
+
+## Files
+- dqn_player.py         : AI client using DQN
+- train_reversi_dqn.py  : Self-play training script
+- reversi_dqn.pth       : Pretrained model file (required for dqn_player.py)
+- reversi_server.py     : Provided server environment
+- greedy_player.py      : Provided greedy AI opponent
+- reversi.py            : Game logic
+
+## How to Run
+1. Open a terminal and run:
+   python3 reversi_server.py
+
+2. In a new terminal, run the greedy opponent:
+   python3 greedy_player.py
+
+3. In a third terminal, run your AI:
+   python3 dqn_player.py
+
+Two games will be played. The result is based on combined piece difference.
+
+## Author
+Your Name
